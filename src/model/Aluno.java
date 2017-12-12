@@ -5,12 +5,12 @@ public class Aluno {
 	private String id;
 	private String name;
 	private String email;
-	private String age;
+	private int age;
 	private String gender;
 	private String comp;
 	private String city;
 	
-	public Aluno(String id, String name, String email, String age, String gender, String comp, String city) {
+	public Aluno(String id, String name, String email, int age, String gender, String comp, String city) {
 		this.id = id;
 		this.name = name;
 		this.email = email;
@@ -23,7 +23,7 @@ public class Aluno {
 	public Aluno(String name2, String email2, int idade, String cidade) {
 		this.name = name2;
 		this.email = email2;
-		this.age =""+idade;
+		this.age = idade;
 		this.city = cidade;
 	}
 
@@ -31,7 +31,7 @@ public class Aluno {
 		return id;
 	}
 
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 
@@ -43,7 +43,7 @@ public class Aluno {
 		return email;
 	}
 
-	public String getAge() {
+	public int getAge() {
 		return age;
 	}
 

@@ -70,14 +70,14 @@ public class ListaEncadeada<T> {
 	
 	public T search(T key, Comparator<T> cmp){
 		ListaEncadeada<T>.Node i = head;
-		T retorno = null;
+		
 		while (i != null){
 			if(cmp.compare(key, i.dado) == 0){
-				retorno = i.dado;
+				return i.dado;
 			}
 			i = i.next;
 		}
-		return retorno;
+		return null;
 	}
 	
 	public void printObjects(){
@@ -99,7 +99,7 @@ public class ListaEncadeada<T> {
 	 		String id = dados[0];
 	 		String name = dados[1];
 	 		String email = dados[2];
-	 		String age = dados[3];
+	 		int age = Integer.parseInt(dados[3]);
 	 		String gender = dados[4];
 	 		String comp = dados[5];
 	 		String city = dados[6];
